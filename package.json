@@ -8,7 +8,9 @@
     "pretest": "npm run build",
     "test": "gulp test",
     "watch": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -55,9 +57,11 @@
     "glob": "^7.0.0",
     "request": "^2.83.0",
     "swig": "^1.4.2",
-    "web-push": "^3.2.2"
+    "web-push": "^3.2.2",
+    "snyk": "^1.230.5"
   },
   "engines": {
     "node": "6"
-  }
+  },
+  "snyk": true
 }
